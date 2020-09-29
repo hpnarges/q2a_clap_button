@@ -6,7 +6,7 @@
 
 
 ```sh
-$ yarn add q2a_clap_button --save
+$ yarn add q2a_clap_button 
 ```
 
 ### Usage
@@ -16,7 +16,7 @@ import React from 'react';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
-export const withEmoji = () => (
+
   <ClapButton
     iconComponent={<FavoriteIcon style={{ width: '20px', height: '20px', fill: 'white' }} />}
     currentClapCount={1000}
@@ -32,7 +32,6 @@ export const withEmoji = () => (
       marginTop: '300px',
     }}
   />
-);
 ```
 
 ### Props and Options
