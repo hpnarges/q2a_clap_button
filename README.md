@@ -48,7 +48,7 @@ export const withEmoji = () => (
 | countCircleSize | 'large' or 'medium' or 'small' |
 | clapCircleColor |color of clap circle|
 | countCircleColor | color of count circle |
-|radius |this number is radius of animation |
+|radius |radius of animation |
 
 License
 ----
