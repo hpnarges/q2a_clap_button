@@ -22,7 +22,7 @@ export default () => {
     return (
       <ClapButton
           iconComponent={<ThumbUpIcon style={{ width: '20px', height: '20px' }} />}
-          clapTotalCount={0}
+          currentClapCount={0}
           count={0}
           step={1}
           maxClapCount={100}
@@ -45,9 +45,9 @@ export default () => {
 | ------ | ------ |
 | clapCircleSize | 'large' or 'medium' or 'small' |
 | countCircleSize | 'large' or 'medium' or 'small' |
-| ClapCircleColor |{'#5f27ae'} |
-| CountCircleColor | {'#5b28ae'} |
-| clapTotalCount | {0} this number is start clap count |
+| clapCircleColor |{'#5f27ae'} |
+| countCircleColor | {'#5b28ae'} |
+| currentClapCount | {0} this number is start clap count |
 | clapCount | {0} this number is start clap count |
 | step|{1} this number is Step counting |
 |maxClapCount| {20} this number is maximum Counting|

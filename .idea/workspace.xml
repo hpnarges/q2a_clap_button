@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfbe4ee5-0baf-412f-bdd8-1c50d58099c5" name="Default Changelist" comment="" />
+    <list default="true" id="bfbe4ee5-0baf-412f-bdd8-1c50d58099c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Q2A.Clap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClapButton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClapButton/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story/index.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/story/index.stories.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../7khatcode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -80,6 +97,8 @@
       <workItem from="1599023266199" duration="9137000" />
       <workItem from="1599107146944" duration="3880000" />
       <workItem from="1601357643540" duration="2105000" />
+      <workItem from="1601362999908" duration="2146000" />
+      <workItem from="1601365758615" duration="1910000" />
     </task>
     <servers />
   </component>
@@ -91,13 +110,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596526778885" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1599027907311">
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1601365755528">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599027907311" />
-    <state x="412" y="144" width="713" height="536" key="find.popup" timestamp="1598950145164">
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601365755528" />
+    <state x="412" y="144" width="713" height="536" key="find.popup" timestamp="1601367043102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="412" y="144" width="713" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1598950145164" />
+    <state x="412" y="144" width="713" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601367043102" />
   </component>
 </project>

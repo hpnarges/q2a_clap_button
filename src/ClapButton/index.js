@@ -12,9 +12,9 @@ const clapButtonParentRef = React.createRef();
 const clapCountRef = React.createRef();
 const animationArray = [];
 export default function Index(props) {
-  const [clapCount, setClapCount] = React.useState(props.clapCount);
+  const [userClapCount, setUserClapCount] = React.useState(props.userClapCount);
   const [isShowClapCount, setIsShowClapCount] = React.useState(false);
-  const [clapTotalCount, setClapTotalCount] = React.useState(props.clapTotalCount);
+  const [currentClapCount, setcurrentClapCount] = React.useState(props.currentClapCount);
   React.useEffect(() => {
     const circleBurst = new mojs.Burst({
       parent: clapButtonParentRef.current,
@@ -128,9 +128,9 @@ export default function Index(props) {
 
   const handleChange = () => {
     setIsShowClapCount(true);
-    if (clapCount < props.maxClapCount) {
-      setClapCount(clapCount + props.step);
-      setClapTotalCount(clapTotalCount + props.step);
+    if (userClapCount < props.maxClapCount) {
+      setUserClapCount(userClapCount + props.step);
+      setcurrentClapCount(currentClapCount + props.step);
       countAnimationTimeline.replay();
       const itemArray = Math.floor(Math.random() * animationArray.length);
       const clapAnimationTimeline = new mojs.Timeline();
@@ -155,22 +155,22 @@ export default function Index(props) {
         }}
       >
         <Fab
-          color={props.CountCircleColor}
+          color={props.countCircleColor}
           aria-label="add"
           size={props.countCircleSize}
           ref={clapCountRef}
-          style={{ backgroundColor: props.CountCircleColor }}
+          style={{ backgroundColor: props.countCircleColor }}
         >
-          <Typography style={{ color: 'white' }}>+{clapCount}</Typography>
+          <Typography style={{ color: 'white' }}>+{userClapCount}</Typography>
         </Fab>
       </div>
       <div style={{ textAlign: 'center' }}>
         <Fab
-          color={props.ClapCircleColor}
+          color={props.clapCircleColor}
           size={props.clapCircleSize}
           onClick={handleChange}
-          disabled={clapCount >= props.maxClapCount}
-          style={{ backgroundColor: props.ClapCircleColor }}
+          disabled={userClapCount >= props.maxClapCount}
+          style={{ backgroundColor: props.clapCircleColor }}
           ref={clapButtonParentRef}
         >
           {props.iconComponent}
@@ -184,7 +184,7 @@ export default function Index(props) {
             msUserSelect: 'none',
           }}
         >
-          +{clapTotalCount}
+          +{currentClapCount}
         </Typography>
       </div>
     </div>
@@ -192,25 +192,25 @@ export default function Index(props) {
 }
 Index.defaultProps = {
   iconComponent: <HandIcon size={30} />,
-  clapTotalCount: 0,
-  clapCount: 0,
+  currentClapCount: 0,
+  userClapCount: 0,
   maxClapCount: 5,
   step: 2,
   clapCircleSize: 'large',
   countCircleSize: 'small',
-  ClapCircleColor: 'secondary',
-  CountCircleColor: 'primary',
+  clapCircleColor: 'secondary',
+  countCircleColor: 'primary',
   radius: 100,
 };
 Index.propTypes = {
   iconComponent: PropTypes.func,
-  clapTotalCount: PropTypes.number,
-  clapCount: PropTypes.number,
+  currentClapCount: PropTypes.number,
+  userClapCount: PropTypes.number,
   step: PropTypes.number,
   maxClapCount: PropTypes.number,
   clapCircleSize: PropTypes.string,
   countCircleSize: PropTypes.string,
-  ClapCircleColor: PropTypes.string,
-  CountCircleColor: PropTypes.string,
+  clapCircleColor: PropTypes.string,
+  countCircleColor: PropTypes.string,
   radius: PropTypes.number,
 };
