@@ -1,9 +1,9 @@
 import React from 'react';
 import Fab from '@material-ui/core/Fab';
-import { makeStyles, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import mojs from 'mo-js';
 import PropTypes from 'prop-types';
-import HandIcon from './HandIcon';
+import HandIcon from './ClapButton/HandIcon';
 
 const countAnimationTimeline = new mojs.Timeline();
 const tlDuration = 1500;
@@ -114,7 +114,7 @@ export default function Index(props) {
     })
       .then({
         opacity: { 1: 0 },
-        y: -props.radius/2,
+        y: -props.radius / 2,
         delay: countDuration / 2,
       })
       .then({

@@ -1,27 +1,24 @@
 {
   "name": "q2a_clap_button",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "private": false,
-  "dependencies": {
-    "@material-ui/core": "4.11.3",
-    "@material-ui/icons": "4.11.2",
-    "@mojs/core": "1.0.3",
-    "@testing-library/jest-dom": "5.11.10",
-    "@testing-library/react": "11.2.6",
-    "@testing-library/user-event": "13.1.2",
-    "mo-js": "0.288.2",
-    "prop-types": "15.7.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scripts": "4.0.3",
-    "styled-components": "5.2.3"
-  },
+  "description": "Clap button like medium",
+  "homepage": "https://github.com/hpnarges/q2a_clap_button.git",
+  "author": "Narges HassanPour <hp.narges8@gmail.com> (https://github.com/hpnarges)",
+  "keywords": [
+    "clap_button",
+    "react.js",
+    "medium",
+    "material-ui"
+  ],
+  "main": "./dist/index.js",
   "scripts": {
     "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook"
+    "deploy": "npm login && yarn build && npm publish",
+    "storybook": "start-storybook",
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel src -d dist --copy-files",
+    "build": "webpack --mode production"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,13 +35,40 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^3.0.2",
+    "gh-pages": "^3.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "styled-components": "^5.2.3",
+    "@material-ui/core": "^4.11.4",
+    "@mojs/core": "1.0.3",
+    "transpile": "^2.7.2",
+    "webpack": "^5.36.2",
+    "mo-js": "^0.288.2",
+    "prop-types": "^15.7.2",
+    "@material-ui/icons": "^4.11.2"
+  },
+  "peerDependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.13.15",
+    "@babel/core": "^7.14.0",
     "@storybook/react": "^6.2.7",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^13.1.2",
     "@types/react": "^17.0.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "chromatic": "^5.7.1",
+    "css-loader": "^5.2.4",
     "eslint": "^7.24.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -54,6 +78,11 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.23.2",
     "gulp-sass": "^4.1.0",
-    "prettier": "^2.2.1"
+    "html-webpack-plugin": "^5.3.1",
+    "prettier": "^2.2.1",
+    "react-scripts": "^4.0.3",
+    "style-loader": "^2.0.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }

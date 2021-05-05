@@ -1,7 +1,7 @@
 import React from 'react';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import ClapButton from '../src/ClapButton';
+import ClapButton from '../src';
 
 export default { title: 'Button' };
 

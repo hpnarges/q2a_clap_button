@@ -13,6 +13,7 @@ $ yarn add q2a_clap_button
 
 ```sh
 import React from 'react';
+import ClapButton from 'q2a_clap_button';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
